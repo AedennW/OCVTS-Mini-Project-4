@@ -1,0 +1,80 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: "Edu QLD Hand", cursive;
+}
+
+header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.tabs {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.tabs a {
+    color: white;
+    font-size: 25px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tabs a:hover {
+    transform: scale(1.2);
+}
+
+.welcome {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.welcome h1{
+    font-size: 100px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.welcome h1:hover{
+    transform: scale(1.2);
+}
+
+.review-button {
+    display: flex;
+    justify-content: center;
+}
+
+.review-button a {
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    background-color: rgb(180, 120, 8);
+    border-radius: 15px;
+    text-align:center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.review-button a:hover {
+    transform: scale(1.2);
+}
+
+.contact-button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-button a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    background-color: rgb(10, 158, 184);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-button a:hover {
+    transform: scale(1.2);
+}
