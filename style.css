@@ -1,7 +1,7 @@
 body {
     background-color: black;
     color: white;
-    font-family: "Edu QLD Hand", cursive;
+    font-family: "Libre Caslon Condensed", serif;
 }
 
 header {
@@ -44,13 +44,13 @@ header {
 .review-button {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .review-button a {
     color: white;
     text-decoration: none;
     font-size: 40px;
-    background-color: rgb(180, 120, 8);
     border-radius: 15px;
     text-align:center;
     transition: transform 0.3s ease-in-out;
@@ -68,13 +68,441 @@ header {
 
 .contact-button a {
     color: white;
-    text-decoration: none;
     font-size: 25px;
-    background-color: rgb(10, 158, 184);
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
 }
 
 .contact-button a:hover {
     transform: scale(1.2);
+}
+
+.goldenstar-img {
+    transform: rotate(0deg);
+    transition: transform 0.6s ease-in-out;
+}
+
+.goldenstar-img:hover{
+    transform: scale(20px);
+    transform: rotate(360deg);
+}
+.aboutme-button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.aboutme-button a {
+    color: white;
+    transition: transform 0.6s ease-in-out;
+}
+
+.aboutme-button a:hover {
+    transform: scale(1.2);
+}
+
+.logo-img {
+    transition: transform 0.6s ease-in-out;
+}
+
+.logo-img:hover {
+    transform: rotate(360deg);
+}
+
+.darknight-blur {
+    width: 300px;
+    border-radius: 15px;
+    position: absolute;
+    top: 250px;           
+    left: 100px;
+    transition: transform 0.6s ease-in-out;
+    box-shadow: 0 0 10px rgb(247, 237, 237);
+}
+
+.darknight-blur:hover {
+    transform: scale(1.2);
+}
+
+.graduation-banner {
+    width: 300px;
+    border-radius: 15px;
+    position: absolute;
+    top: 250px;           
+    right: 100px;
+    transition: transform 0.6s ease-in-out;
+    box-shadow: 0 0 10px rgb(247, 237, 237);
+}
+
+.graduation-banner:hover {
+    transform: scale(1.2);
+}
+
+.grb-banner {
+    width: 300px;
+    border-radius: 15px;
+    position: absolute;
+    top: calc(250px + var(--banner-offset, 0px));
+    right: 780px;
+    transition: transform 0.6s ease-in-out;
+    box-shadow: 0 0 10px rgb(247, 237, 237);
+}
+
+.graduation-review-image {
+    width: 220px;
+}
+
+.grb-banner:hover {
+    transform: scale(1.2);
+}
+
+.grb-title{
+    position:absolute;
+    right: 800px;
+    top:calc(650px + var(--banner-offset, 0px));
+    font-size: 25px;
+}
+
+.grb-genre {
+    position:absolute;
+    right: 812px;
+    top:calc(690px + var(--banner-offset, 0px));
+    font-size: 20px; 
+}
+
+.globe-img {
+    width: 20px;
+    position:absolute;
+    right: 1044px;
+    top:calc(713px + var(--banner-offset, 0px));
+}
+
+.golden-star-icon {
+    height: 20px;
+    position:absolute;
+    right: 970px;
+    top:calc(745px + var(--banner-offset, 0px));
+    transition: transform 0.6s ease-in-out;
+}
+
+.golden-star-icon:hover {
+    transform: rotate(360deg);
+}
+
+.rating-text {
+    position:absolute;
+    right: 900px;
+    top:calc(720px + var(--banner-offset, 0px));
+}
+
+.banner-copy-1 {
+    --banner-offset: 550px;
+}
+
+.banner-copy-2 {
+    --banner-offset: 1100px;
+}
+
+.banner-copy-1 .graduation-review-image {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+}
+
+.banner-copy-1 .graduation-review-image:hover {
+    transform: translateX(-50%) scale(1.2);
+}
+
+.banner-copy-1 .grb-title {
+    left: 50%;
+    right: auto;
+    width: max-content;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.banner-copy-1 .grb-genre {
+    left: calc(50% - 80px);
+    right: auto;
+    width: max-content;
+    text-align: center;
+}
+
+.banner-copy-1 .globe-img {
+    left: calc(50% - 106px);
+    right: auto;
+    top: calc(690px + var(--banner-offset, 0px) + 22px);
+}
+
+.banner-copy-1 .golden-star-icon {
+    left: calc(50% - 44px);
+    right: auto;
+}
+
+.banner-copy-1 .rating-text {
+    left: calc(50% - 17px);
+    right: auto;
+}
+
+.banner-copy-2 {
+    position: absolute;
+    top: calc(250px + var(--banner-offset));
+    left: 50%;
+    display: flex;
+    width: min(320px, calc(100vw - 32px));
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    transform: translateX(-50%);
+}
+
+.banner-copy-2 .grb-banner {
+    position: static;
+    width: min(300px, 100%);
+    transform: none;
+}
+
+.banner-copy-2 .grb-banner:hover {
+    transform: scale(1.05);
+}
+
+.banner-copy-2 .grb-title {
+    position: static;
+    width: 100%;
+    margin: 0;
+    transform: none;
+    text-align: center;
+}
+
+.banner-copy-2 .genre-line {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.banner-copy-2 .genre-line img {
+    width: 20px;
+}
+
+.banner-copy-2 .grb-genre {
+    position: static;
+    margin: 0;
+}
+
+.banner-copy-2 .rating-line {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.banner-copy-2 .rating-line img {
+    height: 20px;
+    transition: transform 0.6s ease-in-out;
+}
+
+.banner-copy-2 .rating-line img:hover {
+    transform: rotate(360deg);
+}
+
+.banner-copy-2 .rating-text {
+    position: static;
+    margin: 0;
+}
+
+.reviews-page {
+    max-width: 1440px;
+    margin: 32px auto;
+    padding: 0 24px;
+}
+
+.reviews-page > h2 {
+    margin: 0 0 24px;
+    text-align: center;
+    font-size: 36px;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+    gap: 24px;
+}
+
+.review-card {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid #555;
+    border-radius: 12px;
+    background-color: #151515;
+    box-shadow: 0 0 10px rgb(247, 237, 237, 0.25);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.review-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 16px rgb(247, 237, 237, 0.5);
+}
+
+.review-card-image {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    background-color: #080808;
+}
+
+.review-card-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    text-align: center;
+}
+
+.review-category {
+    margin: 0 0 8px;
+    color: #e8c85a;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.review-card-content h3 {
+    margin: 0;
+    font-size: 23px;
+}
+
+.review-genre {
+    margin: 8px 0;
+    color: #ccc;
+}
+
+.review-rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: auto 0 0;
+    font-size: 20px;
+}
+
+.review-rating img {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.6s ease-in-out;
+}
+
+.review-rating img:hover {
+    transform: rotate(360deg);
+}
+
+.contact-page {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+    gap: 32px;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 0 24px;
+}
+
+.contact-details,
+.contact-form {
+    padding: 24px;
+    border: 1px solid #555;
+    border-radius: 12px;
+    background-color: #151515;
+    box-shadow: 0 0 10px rgb(247, 237, 237, 0.25);
+}
+
+.contact-details h2,
+.contact-form h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.contact-details a {
+    color: white;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-form-note {
+    margin: -4px 0 8px;
+    color: #ccc;
+    text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #777;
+    border-radius: 6px;
+    background-color: #080808;
+    color: white;
+    font: inherit;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 10px;
+    border: 1px solid #777;
+    border-radius: 6px;
+    background-color: #333;
+    color: #ccc;
+    font: inherit;
+    cursor: not-allowed;
+}
+
+.reviewer-page {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 24px;
+}
+
+.reviewer-profile {
+    overflow: hidden;
+    border: 1px solid #555;
+    border-radius: 12px;
+    background-color: #151515;
+    box-shadow: 0 0 10px rgb(247, 237, 237, 0.25);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.reviewer-profile:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 16px rgb(247, 237, 237, 0.5);
+}
+
+.reviewer-profile-image {
+    display: block;
+    width: 100%;
+    height: 320px;
+    object-fit: contain;
+    background-color: #080808;
+}
+
+.reviewer-profile-content {
+    padding: 24px;
+    text-align: center;
+}
+
+.reviewer-profile-content h2 {
+    margin: 0 0 12px;
+    font-size: 30px;
+}
+
+.reviewer-profile-content p {
+    margin: 0;
+    line-height: 1.6;
 }
